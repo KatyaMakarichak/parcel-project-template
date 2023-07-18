@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <title>Homework 10</title>
+    
+  <link rel="stylesheet" href="css/cat.css">
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <select id="breed-select"></select>
+          <p id="loader" class="loader main-article_facts-cat">Loading data, please wait...</p>
+          <p id="error" class="error main-article_facts-cat">Oops! Something went wrong! Try reloading the page!</p>
+          <div id="cat-info" class="cat-info">
+            <img id="breed_image"></img>
+            <p id="bread_name"></p>
+            <p id="bread_description"></p>
+            <p><b>Temperament:</b><span id="bread_temperament"></span></p>
+          </div>
+
+    <script src="index.js" type="module"></script>
+    
   </body>
 </html>
